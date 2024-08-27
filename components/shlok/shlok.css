@@ -1,0 +1,40 @@
+.shlok-parent-cont{
+    background: url("https://research.baps.org/wp-content/uploads/2024/08/sholka_bg_opt.jpg") no-repeat center center/cover ; 
+
+}
+.shlok-container {
+    font-family: 'Sahitya', serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 0 40px; */
+    margin-top: 20px;
+    flex-direction: row;
+    background: rgba(155, 80, 0, 0.632);
+    color: white;
+    padding: 70px;
+
+}
+
+
+
+.shlok-detail{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.shol-cont {
+
+    /* flex-direction: ; */
+}
+
+.shlok {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.shlok-largeFont {
+    font-size: 19px !important;
+    font-weight: 600 !important;
+}

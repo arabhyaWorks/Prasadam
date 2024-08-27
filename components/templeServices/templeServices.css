@@ -1,0 +1,42 @@
+.ts-cont{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+
+}
+
+.ts-card {
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: red;
+}
+
+.ts-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
+}
+
+.ts-card-title {
+    margin: 0px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}

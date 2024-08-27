@@ -1,0 +1,105 @@
+.products-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.product-item-cont{
+    width: 14rem;
+    padding: 0 10px;
+}
+
+
+.product-image{
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid #f5f5f5; */
+    /* border: 1px solid #000; */
+    background-color: red;
+}
+
+.product-image-cont{
+    width: 100%;
+
+    /* background-image: url("https://shrikashiprasadam.com/thumbnail.php?src=https://shrikashiprasadam.com/upload/products_images/606/606_laxmiji_Photoroom3_17052024121309.jpg&w=600&h=600"); */
+    background-image: url("../../assests/pro-image-1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 14rem;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* position: relative; */
+    transition: 0.5s;
+}
+
+.product-image-cont:hover{
+    background-image: url("../../assests/pro-image-2.jpg");
+    
+
+}
+
+.product-add-to-cart{
+    width: 23px;
+    height: 23px;
+    /* background-color: #df7a58; */
+    background-color: #e9a688;
+    padding: 7px;
+    border-radius: 7px;
+    /* bottom: 5px;
+    right: 5px;
+    position: absolute;
+    z-index: 10; */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-add-to-cart:hover{
+    scale: 1.1;
+}
+
+.product-detail-upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.product-add-to-fav{
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+
+.product-price{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.product-banner{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.banner2-height{
+    height: 300px;
+    /* object-fit: cover; */
+    /* object-position: center; */
+
+}
