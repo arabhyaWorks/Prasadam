@@ -64,3 +64,5 @@ loadAccordian("products-container", "../components/products/products.html");
 loadAccordian("shlok-container", "../components/shlok/shlok.html");
 loadAccordian("ts-cont", "../components/templeServices/templeServices.html");
 loadAccordian("footer", "../components/footer/footer.html");
+loadAccordian("bd-container", "../components/breadCrumbs/breadCrumbs.html");
+loadAccordian("product-overview", "../components/products/productOverview.html");
