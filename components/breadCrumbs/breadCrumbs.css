@@ -1,4 +1,4 @@
-.bd-container{
+.bd-container {
     border: 1px solid #dee2e6 !important;
     border-radius: 15px;
     padding: 1rem;
@@ -12,7 +12,8 @@
 
 
 }
-.bd-container a{
+
+.bd-container a {
     color: #F26414 !important;
 
     /* padding-left: 2rem; */
@@ -20,6 +21,12 @@
     text-decoration: none;
 }
 
-.bd-home-icon{
+.bd-home-icon {}
+
+@media (max-width: 768px) {
+    .bd-container {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
 }
