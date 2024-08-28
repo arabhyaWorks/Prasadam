@@ -38,3 +38,18 @@
     font-size: 19px !important;
     font-weight: 600 !important;
 }
+
+@media screen and (max-width: 768px) {
+    .shlok-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .shlok {
+        font-size: 25px;
+    }
+
+    .shlok-detail {
+        font-size: 16px;
+    }
+}

@@ -17,9 +17,9 @@ body {
     background-repeat: no-repeat;
     /* background-image: url("https://pramukhswami.org/PSM/media/pagebg/bg14.jpg"); */
     background-image: url("https://research.baps.org/wp-content/uploads/2020/11/Layer-4-copy-2y-scaled.jpg");
-    
+
     /* background-color: red; */
-    
+
 }
 
 
@@ -29,4 +29,33 @@ body {
     font-size: 28px;
     font-weight: 600;
     padding: 0 20px 0px;
+}
+
+
+.for-mobile-view {
+    display: none;
+    width: 100%;
+}
+
+
+.for-desktop {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .heading {
+        font-size: 18px;
+        font-weight: 550;
+        padding: 0 10px 0px;
+    }
+
+    .for-mobile-view {
+        display: block;
+    }
+
+    .for-desktop {
+        display: none;
+    }
 }

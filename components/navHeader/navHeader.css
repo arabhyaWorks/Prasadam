@@ -263,6 +263,7 @@ body {
 
 /* General Mobile View */
 @media (max-width: 768px) {
+    
 
     .upper-nav {
         /* flex-direction: column;
@@ -333,10 +334,7 @@ body {
     }
 
     .lower-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        /* overflow: hidden; */
+        display: none;
     }
 
     .linkTitle {

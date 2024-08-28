@@ -40,3 +40,29 @@
     padding-left: 20px;
     padding-bottom: 25px;
 }
+
+
+/* <div class="ts-card"
+style="background-image: url(https://www.tourmyindia.com/blog//wp-content/uploads/2021/12/Feature-Kashi-Vishwanath-Dham-Temple.jpg);">
+<div class="ts-card-overlay">
+    <p class="ts-card-title">SKVT <br> Services </p>
+</div>
+</div> */
+
+@media (max-width: 768px) {
+    .ts-cont {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ts-card {
+       
+    }
+    .ts-card-title {
+        font-size: 1.6rem;
+
+    }
+}

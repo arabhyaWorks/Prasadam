@@ -7,11 +7,12 @@
 
 
 
-.items{
+.items {
     padding: .5rem 0;
     font-size: .875rem;
 }
-.socialIcons{
+
+.socialIcons {
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 1.125rem;
@@ -23,6 +24,7 @@
     position: relative;
     border: 1px solid #dfdfdf;
 }
+
 .footerContainer {
     display: flex;
     justify-content: space-between;
@@ -62,7 +64,7 @@
     border-radius: 5px;
 }
 
-.googleIcon{
+.googleIcon {
     /* aspect-ratio: 646/520; */
     /* background-color: red; */
     /* padding: 10px; */
@@ -91,6 +93,19 @@
     color: #666;
 }
 
+.footerBottom p {
+    margin: 0;
+    color: white;
+}
+
+.footerBottom a {
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+
+
 .socialLinks {
     display: flex;
     align-items: center;
@@ -102,11 +117,29 @@
 .socialLinks img {
     width: 24px;
     margin-left: 10px;
-    
+
 }
 
-.items a{
+.items a {
     text-decoration: none;
     /* color: #666; */
     color: #fef2f3;
+}
+
+
+@media (max-width: 768px) {
+
+    .footer {
+
+        padding: 10px
+    }
+
+
+    .footerBottom {
+        gap: 5px;
+        font-size: 12px;
+    }
+    
+
+
 }
