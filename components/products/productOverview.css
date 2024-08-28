@@ -21,6 +21,7 @@
     display: flex;
     list-style-type: none;
     padding: 0;
+    justify-content: space-between;
 }
 
 .product-more-image {
@@ -31,7 +32,15 @@
     padding: 5px;
     border: none;
     margin: 1px;
+    border: 1.5px solid #E7E7E7;
+    border-radius: 2px;
+    transition: border .2s ease-in-out;
 }
+
+.product-more-image:hover{
+    border: 1.5px solid #F26414;
+}
+
 
 .product-detail-container {
     margin: 0 30px;
@@ -60,6 +69,9 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    border: 2.5px solid #E7E7E7;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
 
 .product-share-button-image {
@@ -76,7 +88,7 @@
     gap: 10px;
 }
 
-.product-price {
+.product-detail-price {
     font-size: 35px !important;
     margin: 0px;
     padding: 0px;
@@ -262,4 +274,96 @@
     font-size: 1rem;
     font-weight: 500;
     bottom: -10px;
+}
+
+
+.more-products {
+    outline: rgb(128 128 128 / 20%) solid 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    margin: 0 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.products-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 20px !important;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0px;
+}
+
+.tab-nav-txt {
+    color: #63382F;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.tab-nav {
+    background-color: #FECEAD;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.specifications {
+    background-color: #fddece;
+
+}
+
+.more-pro-desc-txt {
+    margin: 0px;
+    padding: 30px;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #F26414;
+    text-align: left;
+    padding: 8px;
+    /* background-color: red; */
+}
+
+tr:nth-child(even) {
+    /* background-color: #dddddd; */
+}
+
+.product-add-to-cart {
+    background-color: #FFB400 !important;
+}
+
+/* #FFB400 */
+
+.product-banner-cont {
+    padding: 0 30px;
+}
+
+.product-detail-banner {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    outline: rgb(128 128 128 / 20%) solid 1px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
 }
