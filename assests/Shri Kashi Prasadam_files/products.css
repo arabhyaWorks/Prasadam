@@ -1,0 +1,131 @@
+.products-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.product-item-cont{
+    width: 14rem;
+    padding: 0 10px;
+}
+
+
+.product-image{
+    width: 100%;
+    border-radius: 10px;
+    /* border: 1px solid #f5f5f5; */
+    /* border: 1px solid #000; */
+    background-color: red;
+}
+
+.product-image-cont{
+    width: 100%;
+    background-image: url("../../assests/pro-image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 14rem;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* position: relative; */
+    transition: 0.5s;
+}
+
+.product-image-cont:hover{
+    background-image: url("../../assests/pro-image-2.jpg");
+    
+
+}
+
+.product-add-to-cart{
+    width: 23px;
+    height: 23px;
+    background-color: #e9a688;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-add-to-cart:hover{
+    scale: 1.1;
+}
+
+.product-detail-upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.product-add-to-fav{
+    width: 25px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+
+.product-price{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.product-banner{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.banner2-height{
+    height: 300px;
+    /* object-fit: cover; */
+    /* object-position: center; */
+
+}
+
+
+@media (max-width: 768px) {
+
+    .products-item-container{ 
+        padding: 0px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        row-gap: 2px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .product-item-cont{
+
+    }
+
+    .product-image-cont{
+        width: 10rem;
+        height:10rem;
+        border-radius: 5px;
+    }
+
+    .product-add-to-fav{
+        width: 22px;
+        height: 22px;
+        margin-top: 4px;
+    }
+}

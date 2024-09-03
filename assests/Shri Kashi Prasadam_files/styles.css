@@ -9,9 +9,13 @@
 body {
     margin: 0px;
     padding: 0px;
+    /* background-image: uri("https://research.baps.org/wp-content/uploads/2020/11/Layer-4-copy-2y-scaled.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y; */
 
     background-repeat: no-repeat;
-
+    /* background-image: url("https://pramukhswami.org/PSM/media/pagebg/bg14.jpg"); */
     background-image: url("https://research.baps.org/wp-content/uploads/2020/11/Layer-4-copy-2y-scaled.jpg");
 
     /* background-color: red; */

@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shri Kashi Prasadam</title>
 
-    <!-- <link rel="stylesheet" href="components/navHeader/navHeader2.css"> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shri Kashi Prasadam</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="components/navHeader/navHeader.css" />
+  <link rel="stylesheet" href="components/sideNav/sideNav.css" />
+  <link rel="stylesheet" href="components/category/category.css" />
+  <link rel="stylesheet" href="components/products/products.css" />
+  <link rel="stylesheet" href="components/shlok/shlok.css" />
+  <link rel="stylesheet" href="components/templeServices/templeServices.css" />
+  <link rel="stylesheet" href="components/footer/footer.css" />
+</head>
 
-    <!-- Bootstrap -->
-    <!-- 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+<body>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="components/navHeader/navHeader.css" />
-    <link rel="stylesheet" href="components/sideNav/sideNav.css" />
-    <link rel="stylesheet" href="components/category/category.css" />
-    <link rel="stylesheet" href="components/products/products.css" />
-    <link rel="stylesheet" href="components/shlok/shlok.css" />
-    <link
-      rel="stylesheet"
-      href="components/templeServices/templeServices.css"
-    />
-    <link rel="stylesheet" href="components/footer/footer.css" />
-  </head>
-
-  <body>
-    <!-- Navbar Component -->
-    <div id="navHeader"></div>
+  <!-- <div id="navHeader"></div>
     <div id="sidenav"></div>
-    <!-- <img src="https://shrikashiprasadam.com/upload/slider/14/14_482103.jpg" alt="Chicago" style="width:100%;"> -->
-    <!-- <img src="./assests/carousel.png" alt="Chicago" style="width: 100%" /> -->
+
+
 
     <a href="https://shrikashiprasadam.com/">
       <img class="for-mobile-view" src="./assests/carousel.png" />
@@ -44,13 +33,941 @@
     <div id="products-container"></div>
     <div id="shlok-container"></div>
     <div id="ts-cont"></div>
-    <div id="footer"></div>
+    <div id="footer"></div> -->
 
-    <div>
-      <!-- <img src="https://research.baps.org/wp-content/uploads/2024/08/sholka_bg_opt.jpg" alt="">
-        <div class="l-section-overlay" style="background:rgba(155,81,0,0.80)"></div> -->
+
+  <div class="nav-header">
+
+
+    <div class="upper-nav">
+      <!-- <img src="../../assests/logo.png" alt="Logo" class="logo"> -->
+      <div class="logoCont">
+        <div class="icon-links mob-collapsible">
+          <a class="iconButtons" onclick="openNav()" href="#">
+            <img class="iconLinkImage" src="../../assests/menuIcon.svg" alt="Favourite" />
+          </a>
+        </div>
+        <img src="../../assests/logo.png" alt="Logo" class="logo" />
+      </div>
+
+      <!-- search bar -->
+      <div class="search-bar navHeader">
+        <!-- Dropdown buttons -->
+
+        <div class="dropdown">
+          <button class="dropbtn">All <span class="arrow-down">▼</span></button>
+          <div class="dropdown-content">
+            <div class="dropdownChild">
+              <a href="#">Brass</a>
+              <a href="#">Mala and Beads</a>
+              <a href="#">More</a>
+              <a href="#">Puja Items</a>
+              <a href="#">Shaligram</a>
+              <a href="#">SKVT Special</a>
+            </div>
+          </div>
+        </div>
+
+        <input id="seachInput" class="searchInp" type="text" placeholder="Search Products ..." />
+
+        <div class="search-button">
+          <img src="../../assests/searchIcon.svg" alt="search Rudrakash" class="searchImage" />
+        </div>
+      </div>
+
+      <div class="icon-links">
+        <a class="iconButtons" href="#"><img class="iconLinkImage" src="../../assests/heartIcon.svg"
+            alt="Favourite" /></a>
+        <a class="iconButtons" href="#"><img class="iconLinkImage" src="../../assests/userIcon.svg" alt="Profile" /></a>
+        <a class="iconButtons" href="#"><img class="iconLinkImage" src="../../assests/cartIcon.svg" alt="Cart" /></a>
+      </div>
     </div>
 
-    <script src="js/main.js"></script>
-  </body>
+    <div class="middle-nav">
+      <div class="search-bar">
+        <!-- Dropdown buttons -->
+
+        <div class="dropdown">
+          <button class="dropbtn">All <span class="arrow-down">▼</span></button>
+          <div class="dropdown-content">
+            <div class="dropdownChild">
+              <a href="#">Brass</a>
+              <a href="#">Mala and Beads</a>
+              <a href="#">More</a>
+              <a href="#">Puja Items</a>
+              <a href="#">Shaligram</a>
+              <a href="#">SKVT Special</a>
+            </div>
+          </div>
+        </div>
+
+        <input id="seachInput" class="searchInp" type="text" placeholder="Search Products ..." />
+
+        <div class="search-button">
+          <img src="../../assests/searchIcon.svg" alt="search Rudrakash" class="searchImage" />
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-nav">
+      <div class="linkCont">
+        <p class="linkTitle">Malas and Beads</p>
+        <div class="link-content">
+          <div class="papaComp">
+            <div class="linkChild">
+              <a class="linkItem" href="#">1 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">2 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">3 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">4 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">5 Mukhi Rudrakash</a>
+            </div>
+            <div class="linkChild">
+              <a class="linkItem" href="#">6 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">7 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">8 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">9 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">10 Mukhi Rudrakash</a>
+            </div>
+            <div class="linkChild">
+              <a class="linkItem" href="#">11 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">12 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">13 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">14 Mukhi Rudrakash</a>
+              <a class="linkItem" href="#">15 Mukhi Rudrakash</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="linkTitle" href="#">Brass Idols</a>
+      <a class="linkTitle" href="#">Mala and Beads</a>
+      <a class="linkTitle" href="#">Pooja Items</a>
+      <a class="linkTitle" href="#">Shaligram</a>
+      <a class="linkTitle" href="#">SKVT Special</a>
+      <a class="linkTitle" href="#">Bahumukhi Rudrakash</a>
+      <a class="linkTitle" href="#">Attar and Fragrances</a>
+      <a class="linkTitle" href="#">Silver Idols</a>
+      <a class="linkTitle" href="#">Bracelets</a>
+    </div>
+  </div>
+
+  <!-- SideNav -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="sd-nav">
+      <div class="sidelogocont">
+        <img src="../../assests/logo.png" alt="Shri Kashi Prasadam" class="sideNavLogo" />
+      </div>
+      <div class="sideNavLinks">
+
+        <div id="sideNavAccordian"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <a href="https://shrikashiprasadam.com/">
+    <img class="for-mobile-view" src="./assests/carousel.png" />
+    <img class="for-desktop" src="https://shrikashiprasadam.com/upload/slider/14/14_482103.jpg" />
+  </a>
+
+  <div class="souvenir-category-cont">
+
+    <h2 class="heading">Souvenir Categories</h2>
+    <div class="category-souvenir">
+
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/Mala.jpg?alt=media&token=eca814cf-75d3-4ae1-b17a-9ef8cb4d1de1"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Malas and Beads</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/Brass_Idols.jpg?alt=media&token=f13b7e6d-9554-4a9e-ba20-5d8336df7142"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Brass Idols</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/shaligram.jpg?alt=media&token=e5d79e25-4e18-45d4-888b-63fd66b68922"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Shaligram Idols</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/rudraksha.jpg?alt=media&token=edfee660-4772-4398-9021-417d2816484d"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Rudraksha</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/skvtSpecial.jpg?alt=media&token=1f02731d-e439-407d-9bfb-2559f6740805"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">SKVT Special</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/bhabhut.jpg?alt=media&token=4d19ab61-ba75-468c-bfb5-86764d8142ff"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Bhabhut</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/bracelet.jpg?alt=media&token=05cf2525-6f71-4e42-9f71-c639a1b9b086"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Bracelets</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/silver.jpg?alt=media&token=7e0cb203-1b60-425f-9b8e-52dcc949df99"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Silver Items</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/poojaItems.jpg?alt=media&token=2f2a2a75-e212-4999-b5dc-aa14475254e1"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Pooja Items</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/kavach.jpg?alt=media&token=ca9f7ac0-35cc-41fd-a6ba-e2d8f64aa081"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Kavach & Yantra</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/wooden.jpg?alt=media&token=cec66118-f3be-4b95-b74f-7d1d3f998a81"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Wooden Items</p>
+      </div>
+      <div class="category-cont">
+        <div class="category-imageCont">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/kathavachak-95a17.appspot.com/o/paintings.jpg?alt=media&token=bea564f9-6163-45fa-a7f2-5a161bebade8"
+            alt="Shri Kashi Prasadam" class="category-image" />
+        </div>
+        <p class="category-title">Paintings</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Our special products -->
+
+  <div class="products-container">
+    <h2 class="heading">Our Special Products</h2>
+
+    <div class="products-item-container">
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Arrivals -->
+  <div class="products-container">
+    <h2 class="heading">New Arrivals</h2>
+
+    <div class="products-item-container">
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <a href="https://shrikashiprasadam.com/"><img class="for-mobile-view" style="width: 100%"
+      src="https://staticin.sadhguru.org/in/pub/media/wysiwyg/Rudraksha-Guide-Mob.jpg" />
+    <img class="for-desktop" style="width: 100%"
+      src="https://staticin.sadhguru.org/in/pub/media/wysiwyg/Rudraksha-Guide-Web.jpg" alt="" /></a>
+
+  <!-- Featured Products -->
+
+  <div class="products-container">
+    <h2 class="heading">Featured Products</h2>
+
+    <div class="products-item-container">
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trending Products -->
+
+  <div class="products-container">
+    <h2 class="heading">Trending Products</h2>
+
+    <div class="products-item-container">
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="../../assests/banner2.png" alt="New Rudrakash arrivals on kashi prasadam"
+    class="product-banner banner2-height" />
+
+  <!-- Deals of the day  -->
+
+  <div class="products-container">
+    <h2 class="heading">Deals of the Day</h2>
+
+    <div class="products-item-container">
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-item-cont">
+        <div class="product-image-cont">
+          <img class="product-add-to-cart" src="../../assests/cartIcon.png" alt="Add to Favourite" />
+        </div>
+
+        <div class="product-detail-cont">
+          <div class="product-detail-upper">
+            <p class="product-title poppins">Gaj laxmi ji brass idol</p>
+            <img class="product-add-to-fav" src="../../assests/blackHeartIcon.svg" alt="Add to Favourite" />
+          </div>
+          <div class="product-detail-lower">
+            <p class="product-price">₹1,999</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="shlok-parent-cont">
+    <div class="shlok-container">
+      <div class="shlok-cont">
+        <p class="shlok">
+          गङ्गातरङ्गरमणीयजटाकलापं गौरीनिरन्तरविभूषितवामभागम्। <br>
+          नारायणप्रियमनङ्गमदापहारं वाराणसीपुरपतिं भज विश्वनाथम्॥ <br>
+
+          श्रीविश्वनाथं शरणं प्रपद्ये।
+        </p>
+        <p class="shlok-detail">
+          ~आदि शंकराचार्य~
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ts-cont">
+
+    <div class="ts-card"
+      style="background-image: url(https://st1.latestly.com/wp-content/uploads/2024/01/Kashi-Vishwanath-Dham.jpg);">
+      <div class="ts-card-overlay">
+        <p class="ts-card-title">Sugam Darshan Booking</p>
+      </div>
+    </div>
+
+    <div class="ts-card" style="background-image: url(https://kashimoksha.org/images/rudrabhishek/rudrabhishek1.jpg);">
+      <div class="ts-card-overlay">
+        <p class="ts-card-title">Rudrabhishek Booking</p>
+      </div>
+    </div>
+
+    <div class="ts-card" style="background-image: url(../../assests/baba.jpeg);">
+      <div class="ts-card-overlay">
+        <p class="ts-card-title">Mandir Aarti Booking</p>
+      </div>
+    </div>
+
+    <div class="ts-card"
+      style="background-image: url(https://www.tourmyindia.com/blog//wp-content/uploads/2021/12/Feature-Kashi-Vishwanath-Dham-Temple.jpg);">
+      <div class="ts-card-overlay">
+        <p class="ts-card-title">SKVT <br> Services </p>
+      </div>
+    </div>
+    <!-- 
+  <div class="ts-card"
+      style="background-image: url(https://kashiyatra.in/wp-content/uploads/2024/05/main-entranceof-temple.png);">
+      <div class="ts-card-overlay">
+          <p class="ts-card-title">SKVT <br> Services </p>
+      </div>
+  </div> -->
+
+
+  </div>
+
+  <footer class="footer">
+    <div class="footerContainer">
+      <div class="footerColumn">
+        <h4>Categories</h4>
+        <ul>
+          <li class="items">
+            <a href="/adani-one-pay">Mala & Beads</a>
+          </li>
+          <li class="items">
+            <a href="/scan-and-pay">Rudraksha</a>
+          </li>
+          <li class="items">
+            <a href="/icici-credit-cards">Brass Idols</a>
+          </li>
+          <li class="items">
+            <a href="/offers-discount">Silver Items</a>
+          </li>
+          <li class="items">
+            <a href="/bill-payments">Shaligram Items</a>
+          </li>
+          <li class="items">
+            <a href="/blogs">Kavach</a>
+          </li>
+          <li class="items">
+            <a href="/video-gallery">Bracelet</a>
+          </li>
+          <li class="items">
+            <a href="/domestic-flights">Paintings & Decor</a>
+          </li>
+          <li class="items">
+            <a href="/international-flights">SKVT Bhabut</a>
+          </li>
+          <li class="items">
+            <a href="/international-airlines">Vastram</a>
+          </li>
+          <li class="items">
+            <a href="/travel-insurance">Wooden Items</a>
+          </li>
+          <li class="items">
+            <a href="/long-weekend-calendar">Attar & Fragnances</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerColumn">
+        <h4>Trending Products</h4>
+        <ul>
+          <li class="items">
+            <a href="/flight-booking">1 Mukhi Rudraksha</a>
+          </li>
+          <li class="items">
+            <a href="/hotels">Tulsi Mala</a>
+          </li>
+          <li class="items">
+            <a href="/trains">Sudarshan Shaligram</a>
+          </li>
+          <li class="items">
+            <a href="/bus">Mahalaxmi Shaligram</a>
+          </li>
+          <li class="items">
+            <a href="/cab-booking">2 Mukhi Rudraksha Bracelet</a>
+          </li>
+          <li class="items">
+            <a href="/holidays">Sphatik Mala</a>
+          </li>
+          <li class="items">
+            <a href="/duty-free">Ramji on Shaligram</a>
+          </li>
+          <li class="items">
+            <a href="/food-beverages">Rudraksha Health Kavach</a>
+          </li>
+          <li class="items">
+            <a href="/pranaam-service">Vidya Kavach</a>
+          </li>
+          <li class="items">
+            <a href="/parking">Vighnaharta Kavach</a>
+          </li>
+          <li class="items">
+            <a href="/porter">Shri Kashi Vishwanath <br> Wooden Model</a>
+          </li>
+          <li class="items">
+            <a href="/lounge">Replica Shri Kashi <br> Vishwanath</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerColumn">
+        <h4>About Temple</h4>
+        <ul>
+          <li class="items">
+            <a href="/ground-transportation">Official Website</a>
+          </li>
+          <li class="items">
+            <a href="/Sugam-Darshan">Sugram Darshan</a>
+          </li>
+          <li class="items">
+            <a href="/cargo">Aarti Booking</a>
+          </li>
+          <li class="items">
+            <a href="/fuel-farm">Rudrabhishek Booking</a>
+          </li>
+        </ul>
+        <h4>Other Services</h4>
+        <ul>
+          <li class="items">
+            <a href="/airports">Online Donation</a>
+          </li>
+          <li class="items">
+            <a href="/adani-total-gas">Ask Nandi</a>
+          </li>
+          <li class="items">
+            <a href="/adani-electricity">Live Darshan</a>
+          </li>
+          <li class="items">
+            <a href="/adani-wilmar">Guest House</a>
+          </li>
+          <li class="items">
+            <a href="/adani-realty">Triyambakeshwar Hall Booking</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerColumn">
+        <h4>Help And Support</h4>
+        <ul>
+          <li class="items">
+            <a href="/contact-us">Contact Us</a>
+          </li>
+          <li class="items">
+            <a href="/feedback">Feedback</a>
+          </li>
+          <li class="items">
+            <a href="/track-refund-status">Track Refund Status</a>
+          </li>
+          <li class="items">
+            <a href="/faqs">FAQs</a>
+          </li>
+          <li class="items">
+            <a href="/adani-one">Whatsapp Support</a>
+          </li>
+        </ul>
+        <h4>Company</h4>
+        <ul>
+          <li class="items">
+            <a href="/about-us">About Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footerColumn">
+        <h4>Scan to Download App</h4>
+        <img src='../../assests/qrcode.png' alt="QR Code" class="qrCode" />
+        <div class="appLinks">
+          <!-- App download images can be added here -->
+        </div>
+
+      </div>
+    </div>
+    <div class="footerBottom">
+      <p>
+        © 2024 3i Consulting Pvt. Ltd. • <a href="/privacy-policy">Privacy Policy</a> • <a
+          href="/terms-conditions">Terms & Conditions</a>
+      </p>
+      <div class="socialLinks">
+        <a class="socialIcons" href="https://www.facebook.com/">
+          <FaFacebookF />
+        </a>
+        <a class="socialIcons" href="https://www.facebook.com/">
+          <FaInstagram />
+        </a>
+        <a class="socialIcons" href="https://www.facebook.com/">
+          <FaWhatsapp />
+        </a>
+        <a class="socialIcons" href="https://www.facebook.com/">
+          <FaXTwitter />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <div>
+    <!-- <img src="https://research.baps.org/wp-content/uploads/2024/08/sholka_bg_opt.jpg" alt="">
+        <div class="l-section-overlay" style="background:rgba(155,81,0,0.80)"></div> -->
+  </div>
+
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>

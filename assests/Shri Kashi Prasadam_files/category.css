@@ -1,0 +1,92 @@
+.category-imageCont {
+    width: 154px;
+    height: 154px;
+    border-radius: 82px;
+    background: #eaebed;
+    background: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-image {
+    color: transparent;
+    width: 90%;
+    height: auto;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 50%;
+    /* width: 120px;
+    height: 120px; */
+}
+
+.category-image:hover {
+    width: 100%;
+}
+
+
+
+
+
+.category-title {
+    font-size: 1.125rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1.25rem;
+    color: #6d6d6d;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.category-souvenir {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    padding: 0 40px;
+}
+
+/* General Mobile View */
+@media (max-width: 768px) {
+    .category-souvenir {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        column-gap: 5px;
+        padding: 0px;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .category-image {
+        transition: none;
+        cursor: none;
+    }
+
+    .category-image:hover {
+        width: 100%;
+    }
+
+    .category-cont {
+        flex: 0 0 auto;
+        width: 90px;
+        margin: 0px;
+    }
+
+    .category-imageCont {
+        width: 90px;
+        height: 95px;
+        overflow: hidden;
+    }
+
+    .category-title {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+}

@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
+    /* padding: 0 40px; */
     margin-top: 20px;
     flex-direction: row;
     background: rgba(155, 80, 0, 0.632);
@@ -26,7 +26,7 @@
 
 .shol-cont {
 
-  
+    /* flex-direction: ; */
 }
 
 .shlok {

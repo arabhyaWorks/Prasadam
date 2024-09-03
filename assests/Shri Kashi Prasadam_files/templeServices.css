@@ -1,4 +1,7 @@
 .ts-cont{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,7 +42,12 @@
 }
 
 
-
+/* <div class="ts-card"
+style="background-image: url(https://www.tourmyindia.com/blog//wp-content/uploads/2021/12/Feature-Kashi-Vishwanath-Dham-Temple.jpg);">
+<div class="ts-card-overlay">
+    <p class="ts-card-title">SKVT <br> Services </p>
+</div>
+</div> */
 
 @media (max-width: 768px) {
     .ts-cont {
